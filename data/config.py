@@ -766,7 +766,7 @@ yolact_resnet50_arandano_config = yolact_resnet50_config.copy({
     'num_classes': len(arandano_dataset.class_names) + 1,
 
     # Image Size
-    'max_size': 1920,
+    'max_size': 550,
 })
 
 yolact_resnet50_pascal_config = yolact_resnet50_config.copy({
@@ -830,7 +830,7 @@ yolact_plus_resnet50_arandano_config = yolact_plus_resnet50_config.copy({
     'num_classes': len(arandano_dataset.class_names) + 1,
 
     # Image Size
-    'max_size': 1920,
+    'max_size': 550,
 })
 
 # Default config
