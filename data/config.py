@@ -134,7 +134,7 @@ arandano_dataset = dataset_base.copy({
   'train_images': './yolact/data/arandano/Train/JPEGImages/',
   'valid_info': './yolact/data/arandano/Eval/eval_annotations.json',
   'valid_images': './yolact/data/arandano/Eval/JPEGImages/',
-  'class_names': ('arandano'),
+  'class_names': ('M','I'),
 })
 
 coco2014_dataset = dataset_base.copy({
