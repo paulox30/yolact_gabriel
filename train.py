@@ -58,7 +58,7 @@ parser.add_argument('--config', default=None,
                     help='The config object to use.')
 parser.add_argument('--save_interval', default=10000, type=int,
                     help='The number of iterations between saving the model.')
-parser.add_argument('--validation_size', default=5000, type=int,
+parser.add_argument('--validation_size', default=40, type=int,
                     help='The number of images to use for validation.')
 parser.add_argument('--validation_epoch', default=2, type=int,
                     help='Output validation information every n iterations. If -1, do no validation.')
