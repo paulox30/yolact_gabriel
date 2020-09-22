@@ -712,6 +712,16 @@ yolact_base_config = coco_base_config.copy({
     'use_semantic_segmentation_loss': True,
 })
 
+yolact_resnet101_arandano_config = yolact_base_config.copy({
+    'name': 'yolact_resnet101_arandano',
+    # Dataset stuff
+    'dataset': arandano_dataset,
+    'num_classes': len(arandano_dataset.class_names) + 1,
+
+    # Image Size
+    'max_size': 550,
+})
+
 yolact_im400_config = yolact_base_config.copy({
     'name': 'yolact_im400',
 
@@ -807,6 +817,16 @@ yolact_plus_base_config = yolact_base_config.copy({
     'rescore_mask': True,
 
     'discard_mask_area': 5*5,
+})
+
+yolact_plus_resnet101_arandano_config = yolact_plus_base_config.copy({
+    'name': 'yolact_plus_resnet101_arandano',
+    # Dataset stuff
+    'dataset': arandano_dataset,
+    'num_classes': len(arandano_dataset.class_names) + 1,
+
+    # Image Size
+    'max_size': 550,
 })
 
 yolact_plus_resnet50_config = yolact_plus_base_config.copy({
